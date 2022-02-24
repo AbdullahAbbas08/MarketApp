@@ -118,37 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="شيدر مستورد" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\شيدر مستورد.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ج شيدر" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\ج شيدر.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="اسطنبولى" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\اسطنبولى.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="فلمنك" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\فلمنك.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ج ملح خفيف" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\ج ملح خفيف.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="مساحيق" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\مساحيق.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="براميلى" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\براميلى.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="لانشوهات" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\لانشوهات.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="مجمدات" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\مجمدات.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="لانشوهات1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\لانشوهات.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="رومى" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\image\رومى.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="براميلى" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\براميلى.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="فلمنك" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\فلمنك.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="مساحيق" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\مساحيق.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ج تلاجة" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\image\ج تلاجة.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ج ملح خفيف" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\ج ملح خفيف.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="حلوانى لحم2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\حلوانى لحم2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="لانشوهات" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\لانشوهات.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="حلوانى فراخ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\حلوانى فراخ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="اسطنبولى" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\اسطنبولى.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ج شيدر" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\ج شيدر.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="شيدر مستورد" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\شيدر مستورد.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="مجمدات" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\مجمدات.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="صلاح وعبدة" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\صلاح وعبدة.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

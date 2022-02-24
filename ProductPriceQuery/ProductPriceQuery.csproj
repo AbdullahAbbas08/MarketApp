@@ -168,6 +168,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="image\صلاح وعبدة.jpg" />
+    <None Include="image\حلوانى فراخ.jpg" />
+    <None Include="image\حلوانى لحم2.png" />
+    <None Include="image\لانشوهات.jpg" />
     <None Include="image\ج تلاجة.jpg" />
     <None Include="image\ج ملح خفيف.jpeg" />
     <None Include="image\اسطنبولى.jpg" />

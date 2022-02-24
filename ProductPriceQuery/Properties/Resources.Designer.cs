@@ -113,6 +113,26 @@ namespace ProductPriceQuery.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap حلوانى_فراخ {
+            get {
+                object obj = ResourceManager.GetObject("حلوانى فراخ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap حلوانى_لحم2 {
+            get {
+                object obj = ResourceManager.GetObject("حلوانى لحم2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap رومى {
             get {
                 object obj = ResourceManager.GetObject("رومى", resourceCulture);
@@ -133,6 +153,16 @@ namespace ProductPriceQuery.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap صلاح_وعبدة {
+            get {
+                object obj = ResourceManager.GetObject("صلاح وعبدة", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap فلمنك {
             get {
                 object obj = ResourceManager.GetObject("فلمنك", resourceCulture);
@@ -146,6 +176,16 @@ namespace ProductPriceQuery.Properties {
         internal static System.Drawing.Bitmap لانشوهات {
             get {
                 object obj = ResourceManager.GetObject("لانشوهات", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap لانشوهات1 {
+            get {
+                object obj = ResourceManager.GetObject("لانشوهات1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -596,5 +596,20 @@ namespace ProductPriceQuery
         {
             maintabcontrol.SelectedTab = cheese;
         }
+
+        private void insertinputtable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void insertmaintable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            maintabcontrol.SelectedTab = BeefTab;
+        }
     }
 }
