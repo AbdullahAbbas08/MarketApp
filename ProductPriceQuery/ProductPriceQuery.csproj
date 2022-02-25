@@ -156,7 +156,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="entityframework\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -168,6 +167,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="image\صلاح وعبدة.jpg" />
     <None Include="image\حلوانى فراخ.jpg" />
     <None Include="image\حلوانى لحم2.png" />

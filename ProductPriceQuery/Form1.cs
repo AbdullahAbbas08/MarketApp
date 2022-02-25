@@ -15,7 +15,7 @@ namespace ProductPriceQuery
 {
     public partial class Form1 : Form
     {
-        MarketEntities Context = new MarketEntities();
+        MarketEntities1 Context = new MarketEntities1();
         Product product = new Product();
         string destinationPath = @"C:\DestinationIamges\";
 
@@ -320,8 +320,20 @@ namespace ProductPriceQuery
 
                     if (insertnametxt.Text.Length > 1 && insertpricetxt.Text.Length > 0 && insertcodetxt.Text != "" && Query.Count <= 0)
                     {
+                        if (radio_cleaner.Checked == true)
+                            product.type = 1;
+                        else if (radio_beef.Checked == true)
+                            product.type = 2;
+                        else if (radio_cheese.Checked == true)
+                            product.type = 3;
+                        else if (radio_freeze.Checked == true)
+                            product.type = 4;
+                        else
+                            product.type =0;
+
                         Context.Products.Add(product);
                         Context.SaveChanges();
+
                         insertnametxt.Text = "";
                         insertpricetxt.Text = "";
                         insertcodetxt.Text = "";
@@ -369,8 +381,6 @@ namespace ProductPriceQuery
                 {
                     MessageBox.Show("إختر نوع العملية إضافة وللا تعديل من فوق ");
                 }
-
-
             }
             catch (Exception ex)
             {
@@ -610,6 +620,38 @@ namespace ProductPriceQuery
         private void button3_Click(object sender, EventArgs e)
         {
             maintabcontrol.SelectedTab = BeefTab;
+        }
+
+        private void radio_cleaner_Click(object sender, EventArgs e)
+        {
+            radio_cleaner.BackColor = Color.Red;
+            radio_beef.BackColor = Color.LightGray;
+            radio_cheese.BackColor = Color.LightGray;
+            radio_freeze.BackColor = Color.LightGray;
+        }
+
+        private void radio_beef_Click(object sender, EventArgs e)
+        {
+            radio_cleaner.BackColor = Color.LightGray;
+            radio_beef.BackColor = Color.Red;
+            radio_cheese.BackColor = Color.LightGray;
+            radio_freeze.BackColor = Color.LightGray;
+        }
+
+        private void radio_cheese_Click(object sender, EventArgs e)
+        {
+            radio_cleaner.BackColor = Color.LightGray;
+            radio_beef.BackColor = Color.LightGray;
+            radio_cheese.BackColor = Color.Red;
+            radio_freeze.BackColor = Color.LightGray;
+        }
+
+        private void radio_freeze_Click(object sender, EventArgs e)
+        {
+            radio_cleaner.BackColor = Color.LightGray;
+            radio_beef.BackColor = Color.LightGray;
+            radio_cheese.BackColor = Color.LightGray;
+            radio_freeze.BackColor = Color.Red;
         }
     }
 }

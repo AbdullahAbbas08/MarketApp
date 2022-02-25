@@ -19,5 +19,6 @@ namespace ProductPriceQuery.entityframework
         public string Image { get; set; }
         public double Price { get; set; }
         public string Parcode { get; set; }
+        public Nullable<byte> type { get; set; }
     }
 }

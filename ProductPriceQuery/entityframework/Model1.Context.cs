@@ -13,10 +13,10 @@ namespace ProductPriceQuery.entityframework
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MarketEntities : DbContext
+    public partial class MarketEntities1 : DbContext
     {
-        public MarketEntities()
-            : base("name=MarketEntities")
+        public MarketEntities1()
+            : base("name=MarketEntities1")
         {
         }
     

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="588972297d59457ea4ce513eea7b4739" Name="Diagram1">
+      <Diagram DiagramId="d32f2a29749b451fbdef132601d5489d" Name="Diagram1">
         <EntityTypeShape EntityType="MarketModel.Product" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
