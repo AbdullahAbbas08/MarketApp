@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Core;
+using System.Data.Entity.Core.Objects;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -23,7 +25,8 @@ namespace ProductPriceQuery
         {
             InitializeComponent();
         }
-
+        int selectedRow = -1 ;
+        List<int> pricearr = new List<int>(); 
         private void Form1_Load(object sender, EventArgs e)
         {
             maintabcontrol.SelectedTab = querytab;
@@ -130,6 +133,7 @@ namespace ProductPriceQuery
             try
             {
                 AllProductGridView.Rows.Clear();
+                pricearr.Clear();
 
                 var Query = (from data in Context.Products
                              select data).ToList();
@@ -141,6 +145,7 @@ namespace ProductPriceQuery
                         var RowIndex = AllProductGridView.Rows.Add();
                         AllProductGridView.Rows[RowIndex].Cells["genname"].Value = item.Name;
                         AllProductGridView.Rows[RowIndex].Cells["genprice"].Value = item.Price;
+                        pricearr.Add(item.ID);
                         if (item.Image != null)
                             AllProductGridView.Rows[RowIndex].Cells["genimage"].Value = Image.FromFile(item.Image);
                     }
@@ -246,8 +251,8 @@ namespace ProductPriceQuery
             {
                 maintabcontrol.SelectedTab = AllProducttabPage;
             }
-
-            if (e.KeyData == Keys.Down || e.KeyData == Keys.Up || e.KeyData == Keys.Left || e.KeyData == Keys.Right)
+            //e.KeyData == Keys.Down || e.KeyData == Keys.Up || e.KeyData == Keys.Left || e.KeyData == Keys.Right
+            if (e.KeyData == Keys.Escape)
             {
                 maintabcontrol.SelectedTab = querytab;
                 queryinputcode.Focus();
@@ -652,6 +657,94 @@ namespace ProductPriceQuery
             radio_beef.BackColor = Color.LightGray;
             radio_cheese.BackColor = Color.LightGray;
             radio_freeze.BackColor = Color.Red;
+        }
+
+        private void AllProductGridView_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+
+            //MessageBox.Show("row : "+e.RowIndex.ToString()+" column : "+e.ColumnIndex.ToString());
+        }
+
+        private void AllProductGridView_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        double newPrice;
+        private void AllProductGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //selectedRow = e.RowIndex;
+            //DataGridViewRow row = AllProductGridView.Rows[selectedRow];
+            //newPrice = double.Parse( row.Cells[1].Value.ToString());
+            //MessageBox.Show(newPrice.ToString());
+        }
+
+        private void update_all_Click(object sender, EventArgs e)
+        {
+             
+           
+        }
+
+        public void updateValue(double newPrice)
+        {
+            Product productupdate = new Product();
+            try
+            {
+                if (selectedRow == -1)
+                {
+                    MessageBox.Show("أختر المنتج أولا ");
+                }
+                else
+                {
+                    var ID = pricearr[selectedRow];
+
+                    var Query = (from item in Context.Products
+                                 where item.ID == ID
+                                 select item).SingleOrDefault();
+
+                    if (Query != null)
+                    {
+
+                        //productupdate.ID = Query.ID;
+                        //productupdate.Name = Query.Name;
+                        Query.Price = newPrice;
+                        //productupdate.Parcode = Query.Parcode;
+                        //productupdate.Image = Query.Image;
+                        //productupdate.type = Query.type;
+
+                        //Context.Products.Attach(Query);
+                        //Context.Entry(Query).State = EntityState.Deleted;
+                        //Context.SaveChanges();
+                        //Context.Products.Add(productupdate);
+
+                        //Context.Entry(productupdate).State = EntityState.Modified;
+                        //Context.Entry(productupdate).Reload();
+                        Context.SaveChanges();
+                        //DisplayAll();
+
+                    }
+
+                }
+            }
+            catch (OptimisticConcurrencyException)
+            {
+                //Context.Entry(productupdate).Reload();
+                //Context.Refresh(RefreshMode.ClientWins, productupdate);
+                Context.SaveChanges();
+            }
+        }
+
+        private void AllProductGridView_CellLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            //selectedRow = e.RowIndex;
+        }
+
+        private void AllProductGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedRow = e.RowIndex;
+            DataGridViewTextBoxCell cell = (DataGridViewTextBoxCell)AllProductGridView.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            updateValue(double.Parse(cell.Value.ToString()));
+
         }
     }
 }
